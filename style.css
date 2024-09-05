@@ -1,5 +1,7 @@
 body {
-  background: lightcyan;
+  background: url(img/tree.jpeg), url(img/field.jpeg);
+  background-repeat: no-repeat, repeat;
+
   color: white;
 }
 h2 {
