@@ -17,3 +17,17 @@ body {
   box-sizing: border-box;
   display: flex;
 }
+
+.sidebar-satu {
+  /* background-color: cornsilk; */
+  margin-right: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.sidebar-dua {
+  /* background-color: aqua; */
+  margin-left: 20px;
+  padding: 10px;
+}
