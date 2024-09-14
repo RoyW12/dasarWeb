@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="" class="bio" onsubmit="return cekAja()">
+        <label for="name">Nama</label>
+        <input type="text" name="name" id="name" /><br /><br />
+
+        <label for="Alamat">Alamat </label>
+        <textarea type="text" name="Alamat" id="alamat"></textarea><br /><br />
+
+        <label for="birthday">Birthday: </label>
+        <input type="date" id="birthday" name="birthday" /><br /><br />
+
+        <label for="jenis_kelamin">Jenis Kelamin</label>
+        <input
+          type="checkbox"
+          id="laki_laki"
+          name="laki_laki"
+          value="laki-laki"
+        />
+        <label for="laki_laki"> Laki-laki</label>
+        <input type="checkbox" id="wanita" name="wanita" value="wanita" />
+        <label for="wanita"> Wanita</label><br /><br />
+
+        <label for="hobby">Hobby</label>
+        <input type="checkbox" id="berenang" name="Berenang" value="Berenang" />
+        <label for="Berenang"> Berenang</label>
+
+        <input type="checkbox" id="berlari" name="Berlari" value="Berlari" />
+        <label for="Berlari"> Berlari</label>
+
+        <input
+          type="checkbox"
+          id="lain_lain_hobby"
+          name="Lain_lain"
+          value="Lain_lain"
+        />
+        <label for="Lain_lain"> lain-lain</label><br /><br />
+
+        <label for="Pekerjaan">Pekerjaan</label>
+        <input type="checkbox" id="swasta" name="Swasta" value="Swasta" />
+        <label for="Swasta"> Swasta</label>
+        <input type="checkbox" id="PNS" name="PNS" value="PNS" />
+        <label for="PNS"> PNS</label>
+        <input
+          type="checkbox"
+          id="lain_lain_job"
+          name="PekerjaanLain"
+          value="Lain-lain"
+        />
+        <label for="Lain_lain"> lain-lain</label><br /><br />
+
+        <input type="checkbox" name="cek" id="cek" />
+        <label for="cek"> Check jika anda akan menginginkan data ini</label
+        ><br /><br />
+        <button type="submit">Cek!</button>
+      </form>
+    </div>
+    <script>
+      function cekAja() {
+        let nama = document.getElementById("name").value;
+        let alamat = document.getElementById("alamat").value;
+        let birthday = document.getElementById("birthday").value;
+        let laki_laki = document.getElementById("laki_laki");
+        let wanita = document.getElementById("wanita");
+        let berenang = document.getElementById("berenang");
+        let berlari = document.getElementById("berlari");
+        let lainhobi = document.getElementById("lain_lain_hobby");
+        let swasta = document.getElementById("swasta");
+        let pns = document.getElementById("PNS");
+        let lainJob = document.getElementById("lain_lain_job");
+        let cek = document.getElementById("cek");
+
+        let bio = [nama, alamat, birthday];
+        if (cek.checked) {
+          if (laki_laki.checked) bio.push(laki_laki.value);
+          if (wanita.checked) bio.push(wanita.value);
+          if (berenang.checked) bio.push(berenang.value);
+          if (berlari.checked) bio.push(berlari.value);
+          if (lainhobi.checked) bio.push(lainhobi.value);
+          if (swasta.checked) bio.push(swasta.value);
+          if (pns.checked) bio.push(pns.value);
+          if (lainJob.checked) bio.push(lainJob.value);
+          alert(
+            "Nama: " +
+              bio[0] +
+              " Alamat: " +
+              bio[1] +
+              " Birthday: " +
+              bio[2] +
+              " Jenis kelamin " +
+              bio[3] +
+              " Hobi: " +
+              bio[4] +
+              " Pekerjaan :" +
+              bio[5]
+          );
+        }
+      }
+    </script>
+  </body>
+</html>
