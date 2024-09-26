@@ -1,5 +1,5 @@
 body {
-  background: url(img/tree.jpeg), url(img/field.jpeg);
+  background: url(../img/tree.jpeg), url(../img/field.jpeg);
   background-repeat: no-repeat, repeat;
 
   color: white;
