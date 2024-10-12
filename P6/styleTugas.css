@@ -1,0 +1,31 @@
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 16px;
+  border: 1px solid black;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.container {
+  border: 1px solid black;
+  background-color: rgb(136, 136, 136);
+}
+#flip {
+  font-size: 24px;
+  text-align: center;
+}
+tr,
+td {
+  background-color: rgb(136, 136, 136);
+}
+#axs {
+  text-align: center;
+}
