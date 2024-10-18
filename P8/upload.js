@@ -3,7 +3,7 @@ $(document).ready(function () {
     e.preventDefault();
 
     var formData = new FormData(this);
-
+    // revisi
     $.ajax({
       type: "POST",
       url: "upload_ajax.php",

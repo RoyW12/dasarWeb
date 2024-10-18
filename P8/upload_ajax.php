@@ -14,6 +14,7 @@ if (isset($_FILES['file'])) {
     // if ($file_size > 2097152) {
     //     $errors[] = 'Ukuran file tidak boleh lebih dari 2 MB';
     // }
+    // revisi
 
     if (empty($errors)) {
         if (!is_dir("documents")) {
