@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    #errAlert {
+      background-color: rgb(237, 108, 108);
+      color: rgb(174, 36, 36);
+      font-size: 18px;
+      padding: 10px;
+      display: none;
+      border-radius: 7px;
+      font-family: "Lato", sans-serif;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="image-wrapper">
+        <img src="1.jpg" alt="gambar" />
+      </div>
+      <div class="form-wrapper">
+        <h2 class="welcome">Welcome!</h2>
+        <p class="sign-in">Sign In to your account</p>
+        <form action="sessionLogin.php" method="post" id="loginForm">
+          <input type="email" placeholder="Email" name="email" id="email" />
+          <input
+            type="password"
+            placeholder="Password"
+            name="password"
+            id="password"
+          />
+          <button type="submit" id="btn-submit">SIGN IN</button>
+        </form>
+        <p id="errAlert">Input empty</p>
+        <p class="log_with" id="log_with">OR LOGIN WITH</p>
+        <div class="icons">
+          <a href="https://www.google.com/"
+            ><img src="icon1.png" alt="" class="icon" id="icon1"
+          /></a>
+          <a href="https://www.linkedin.com/"
+            ><img src="icon2.png" alt="" class="icon" id="icon2"
+          /></a>
+          <a href="https://www.facebook.com/">
+            <img src="icon3.png" alt="" class="icon" id="icon3"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let email = document.getElementById("email");
+      let password = document.getElementById("password");
+      let form = document.getElementById("loginForm");
+      let errAlert = document.getElementById("errAlert");
+      let btnSubmit = document.getElementById("btn-submit");
+      let icon1 = document.getElementById("icon1");
+      let icon2 = document.getElementById("icon2");
+      let icon3 = document.getElementById("icon3");
+      let logW = document.querySelector(".log_with");
+
+      btnSubmit.addEventListener("click", function () {
+        if (email.value === "" || password.value === "") {
+          errAlert.style.display = "block";
+          icon1.style.display = "none";
+          icon2.style.display = "none";
+          icon3.style.display = "none";
+          logW.style.display = "none";
+          setTimeout(function () {
+            errAlert.style.display = "none";
+            icon1.style.display = "inline";
+            icon2.style.display = "inline";
+            icon3.style.display = "inline";
+            logW.style.display = "inline";
+          }, 3000);
+        }
+      });
+
+      form.addEventListener("submit", function (e) {
+        if (email.value === "" || password.value === "") {
+          e.preventDefault();
+        }
+      });
+    </script>
+  </body>
+</html>

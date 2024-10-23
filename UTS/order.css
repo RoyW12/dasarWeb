@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 100%;
+}
+
+.gambar1 {
+  background-image: url("gambar.jpg");
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  align-items: center;
+  position: sticky;
+  width: 100%;
+  top: 0;
+}
+
+.logo {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 600;
+  color: white;
+  margin-left: 20px;
+}
+
+.list1 ul,
+.list2 ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list1 ul li,
+.list2 ul li {
+  margin-right: 20px;
+}
+
+.list1 ul li a,
+.list2 ul li button {
+  color: white;
+  text-decoration: none;
+}
+
+.list2 ul li a {
+  background: none;
+  border: none;
+  font-weight: 300;
+  cursor: pointer;
+}
+.list2 ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.konten {
+  display: flex;
+  text-align: center;
+  color: rgb(210, 210, 210);
+  align-items: center;
+  justify-content: center;
+  margin: 150px 0;
+}
+
+.konten-utama {
+  backdrop-filter: blur(7px);
+  padding: 60px;
+}
+.konten-kedua {
+  padding: 60px;
+  background-color: white;
+  height: 300px;
+}
+#hasil p {
+  width: 100%;
+  color: black;
+}
+
+.konten h1 {
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+}
+
+.konten-kedua h1 {
+  color: black;
+}
+
+.konten h3 {
+  margin: 20px 0;
+  font-size: 24px;
+}
+.form a {
+  text-decoration: none;
+  color: black;
+}
+
+.form input {
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 9px;
+  font-family: "Lato", sans-serif;
+}
+
+.form button {
+  padding: 10px 20px;
+  font-family: "Lato", sans-serif;
+  border-radius: 5px;
+  outline: none;
+}
+
+.form button:hover {
+  background-color: rgb(73, 40, 37);
+  cursor: pointer;
+  color: white;
+}
+
+.play {
+  font-weight: 600;
+  padding: 15px;
+  width: 200px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.play:hover {
+  background-color: rgb(100, 60, 41);
+  cursor: pointer;
+}
