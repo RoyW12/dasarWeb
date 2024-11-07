@@ -1,0 +1,26 @@
+table {
+  width: 100%;
+  margin: 20px auto;
+  background-color: #fff;
+}
+
+.btn-edit {
+  margin: 4px;
+  background-color: rgb(31, 225, 50);
+  border: none;
+  padding: 8px 12px;
+}
+.btn-delete {
+  margin: 4px;
+  background-color: rgb(191, 35, 35);
+  border: none;
+  padding: 8px 12px;
+}
+.btn-edit:hover {
+  background-color: rgb(98, 242, 112);
+  cursor: pointer;
+}
+.btn-delete:hover {
+  background-color: rgb(202, 87, 87);
+  cursor: pointer;
+}
